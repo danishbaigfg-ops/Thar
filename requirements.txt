@@ -1,7 +1,3 @@
 fastapi
-uvicorn
-openmeteo-requests
-pandas
-requests-cache
-retry-requests
-apscheduler
+httpx
+tzdata

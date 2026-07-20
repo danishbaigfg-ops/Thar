@@ -1,0 +1,17 @@
+name = "weather-worker"
+main = "main.py"
+compatibility_date = "2026-07-20"
+compatibility_flags = ["python_workers"]
+
+[observability]
+enabled = true
+
+[triggers]
+crons = [
+    "30 19 * * *", # 12:30 AM Asia/Karachi (UTC+5)
+    "30 7 * * *",  # 12:30 PM Asia/Karachi (UTC+5)
+]
+
+[[kv_namespaces]]
+binding = "WEATHER_KV"
+id = "a23ea76e1e9248d4b56b5731a5bf7c58"

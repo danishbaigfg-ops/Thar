@@ -1,0 +1,16 @@
+[project]
+name = "weather-worker"
+version = "0.1.0"
+description = "Open-Meteo weather API on Cloudflare Workers"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "httpx",
+    "tzdata",
+]
+
+[dependency-groups]
+dev = [
+    "workers-py",
+    "workers-runtime-sdk",
+]
